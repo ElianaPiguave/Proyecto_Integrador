@@ -35,11 +35,11 @@ namespace Proyecto_Integrador
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btn_clientes = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.barra_superior = new System.Windows.Forms.Panel();
             this.btn_ventas = new System.Windows.Forms.Button();
             this.btn_compras = new System.Windows.Forms.Button();
+            this.btn_clientes = new System.Windows.Forms.Button();
             this.btn_Productos = new System.Windows.Forms.Button();
             this.btn_inicio = new System.Windows.Forms.PictureBox();
             this.btn_minimizar = new System.Windows.Forms.PictureBox();
@@ -109,23 +109,6 @@ namespace Proyecto_Integrador
             this.panel2.Size = new System.Drawing.Size(5, 32);
             this.panel2.TabIndex = 6;
             // 
-            // btn_clientes
-            // 
-            this.btn_clientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btn_clientes.FlatAppearance.BorderSize = 0;
-            this.btn_clientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.btn_clientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_clientes.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_clientes.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_clientes.Image = ((System.Drawing.Image)(resources.GetObject("btn_clientes.Image")));
-            this.btn_clientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_clientes.Location = new System.Drawing.Point(10, 198);
-            this.btn_clientes.Name = "btn_clientes";
-            this.btn_clientes.Size = new System.Drawing.Size(207, 32);
-            this.btn_clientes.TabIndex = 3;
-            this.btn_clientes.Text = "Clientes";
-            this.btn_clientes.UseVisualStyleBackColor = false;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
@@ -182,6 +165,25 @@ namespace Proyecto_Integrador
             this.btn_compras.TabIndex = 4;
             this.btn_compras.Text = "Compras";
             this.btn_compras.UseVisualStyleBackColor = false;
+            this.btn_compras.Click += new System.EventHandler(this.btn_compras_Click);
+            // 
+            // btn_clientes
+            // 
+            this.btn_clientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btn_clientes.FlatAppearance.BorderSize = 0;
+            this.btn_clientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btn_clientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_clientes.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_clientes.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_clientes.Image = ((System.Drawing.Image)(resources.GetObject("btn_clientes.Image")));
+            this.btn_clientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_clientes.Location = new System.Drawing.Point(10, 198);
+            this.btn_clientes.Name = "btn_clientes";
+            this.btn_clientes.Size = new System.Drawing.Size(207, 32);
+            this.btn_clientes.TabIndex = 3;
+            this.btn_clientes.Text = "Clientes";
+            this.btn_clientes.UseVisualStyleBackColor = false;
+            this.btn_clientes.Click += new System.EventHandler(this.btn_clientes_Click);
             // 
             // btn_Productos
             // 

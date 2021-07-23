@@ -80,5 +80,15 @@ namespace Proyecto_Integrador
         {
             AbrirFormHija(new Ventas());
         }
+
+        private void btn_clientes_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new Clientes());
+        }
+
+        private void btn_compras_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new Compras());
+        }
     }
 }

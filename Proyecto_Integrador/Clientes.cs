@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace Proyecto_Integrador
 {
-    public partial class Productos : Form
+    public partial class Clientes : Form
     {
-        public Productos()
+        public Clientes()
         {
             InitializeComponent();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void Clientes_Load(object sender, EventArgs e)
         {
 
         }

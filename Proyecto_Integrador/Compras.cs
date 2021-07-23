@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Proyecto_Integrador
 {
-    public partial class Productos : Form
+    public partial class Compras : Form
     {
-        public Productos()
+        public Compras()
         {
             InitializeComponent();
         }
@@ -22,7 +22,12 @@ namespace Proyecto_Integrador
 
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
