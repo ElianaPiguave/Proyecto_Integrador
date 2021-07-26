@@ -34,22 +34,22 @@ namespace Proyecto_Integrador
             this.MenuVertical = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btn_ventas = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.barra_superior = new System.Windows.Forms.Panel();
+            this.btn_ventas = new System.Windows.Forms.Button();
             this.btn_compras = new System.Windows.Forms.Button();
             this.btn_clientes = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.btn_Productos = new System.Windows.Forms.Button();
             this.btn_inicio = new System.Windows.Forms.PictureBox();
-            this.barra_superior = new System.Windows.Forms.Panel();
             this.btn_minimizar = new System.Windows.Forms.PictureBox();
             this.btn_restaurar = new System.Windows.Forms.PictureBox();
             this.btn_maximizar = new System.Windows.Forms.PictureBox();
             this.btn_cerrar = new System.Windows.Forms.PictureBox();
             this.panelContenedor.SuspendLayout();
             this.MenuVertical.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_inicio)).BeginInit();
             this.barra_superior.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_inicio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_minimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_restaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_maximizar)).BeginInit();
@@ -58,17 +58,14 @@ namespace Proyecto_Integrador
             // 
             // panelContenedor
             // 
-            this.panelContenedor.AutoSize = true;
             this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.panelContenedor.Controls.Add(this.MenuVertical);
             this.panelContenedor.Controls.Add(this.barra_superior);
-            this.panelContenedor.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContenedor.Location = new System.Drawing.Point(0, 0);
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(1132, 498);
             this.panelContenedor.TabIndex = 0;
-            this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
             // 
             // MenuVertical
             // 
@@ -104,6 +101,36 @@ namespace Proyecto_Integrador
             this.panel3.Size = new System.Drawing.Size(5, 32);
             this.panel3.TabIndex = 3;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.panel2.Location = new System.Drawing.Point(3, 122);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(5, 32);
+            this.panel2.TabIndex = 6;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.panel1.Location = new System.Drawing.Point(3, 84);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(5, 32);
+            this.panel1.TabIndex = 2;
+            // 
+            // barra_superior
+            // 
+            this.barra_superior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.barra_superior.Controls.Add(this.btn_minimizar);
+            this.barra_superior.Controls.Add(this.btn_restaurar);
+            this.barra_superior.Controls.Add(this.btn_maximizar);
+            this.barra_superior.Controls.Add(this.btn_cerrar);
+            this.barra_superior.Dock = System.Windows.Forms.DockStyle.Top;
+            this.barra_superior.Location = new System.Drawing.Point(0, 0);
+            this.barra_superior.Name = "barra_superior";
+            this.barra_superior.Size = new System.Drawing.Size(1132, 33);
+            this.barra_superior.TabIndex = 0;
+            this.barra_superior.MouseDown += new System.Windows.Forms.MouseEventHandler(this.barra_superior_MouseDown);
+            // 
             // btn_ventas
             // 
             this.btn_ventas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
@@ -121,14 +148,6 @@ namespace Proyecto_Integrador
             this.btn_ventas.Text = "Ventas";
             this.btn_ventas.UseVisualStyleBackColor = false;
             this.btn_ventas.Click += new System.EventHandler(this.btn_ventas_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel2.Location = new System.Drawing.Point(3, 122);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(5, 32);
-            this.panel2.TabIndex = 6;
             // 
             // btn_compras
             // 
@@ -158,21 +177,13 @@ namespace Proyecto_Integrador
             this.btn_clientes.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btn_clientes.Image = ((System.Drawing.Image)(resources.GetObject("btn_clientes.Image")));
             this.btn_clientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_clientes.Location = new System.Drawing.Point(9, 198);
+            this.btn_clientes.Location = new System.Drawing.Point(10, 198);
             this.btn_clientes.Name = "btn_clientes";
             this.btn_clientes.Size = new System.Drawing.Size(207, 32);
             this.btn_clientes.TabIndex = 3;
             this.btn_clientes.Text = "Clientes";
             this.btn_clientes.UseVisualStyleBackColor = false;
             this.btn_clientes.Click += new System.EventHandler(this.btn_clientes_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel1.Location = new System.Drawing.Point(3, 84);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(5, 32);
-            this.panel1.TabIndex = 2;
             // 
             // btn_Productos
             // 
@@ -203,20 +214,6 @@ namespace Proyecto_Integrador
             this.btn_inicio.TabIndex = 0;
             this.btn_inicio.TabStop = false;
             this.btn_inicio.Click += new System.EventHandler(this.btn_inicio_Click);
-            // 
-            // barra_superior
-            // 
-            this.barra_superior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.barra_superior.Controls.Add(this.btn_minimizar);
-            this.barra_superior.Controls.Add(this.btn_restaurar);
-            this.barra_superior.Controls.Add(this.btn_maximizar);
-            this.barra_superior.Controls.Add(this.btn_cerrar);
-            this.barra_superior.Dock = System.Windows.Forms.DockStyle.Top;
-            this.barra_superior.Location = new System.Drawing.Point(0, 0);
-            this.barra_superior.Name = "barra_superior";
-            this.barra_superior.Size = new System.Drawing.Size(1132, 33);
-            this.barra_superior.TabIndex = 0;
-            this.barra_superior.MouseDown += new System.Windows.Forms.MouseEventHandler(this.barra_superior_MouseDown);
             // 
             // btn_minimizar
             // 
@@ -288,14 +285,13 @@ namespace Proyecto_Integrador
             this.Text = "Contenido";
             this.panelContenedor.ResumeLayout(false);
             this.MenuVertical.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btn_inicio)).EndInit();
             this.barra_superior.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btn_inicio)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_minimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_restaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_maximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_cerrar)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
