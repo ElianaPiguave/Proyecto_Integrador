@@ -90,5 +90,10 @@ namespace Proyecto_Integrador
         {
             AbrirFormHija(new Compras());
         }
+
+        private void panelContenedor_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
