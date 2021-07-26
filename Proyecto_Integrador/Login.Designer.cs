@@ -30,6 +30,7 @@ namespace Proyecto_Integrador
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -38,11 +39,11 @@ namespace Proyecto_Integrador
             this.button1 = new System.Windows.Forms.Button();
             this.btn_minimizar = new System.Windows.Forms.PictureBox();
             this.btn_cerrar = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lkl_registro = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_minimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_cerrar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -54,6 +55,16 @@ namespace Proyecto_Integrador
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(375, 454);
             this.panel1.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Proyecto_Integrador.Properties.Resources.WhatsApp_Image_2021_07_15_at_21_39_24_removebg_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(11, 43);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(355, 348);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -107,7 +118,7 @@ namespace Proyecto_Integrador
             // 
             this.button1.BackColor = System.Drawing.Color.DodgerBlue;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(637, 346);
+            this.button1.Location = new System.Drawing.Point(637, 320);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(158, 43);
             this.button1.TabIndex = 6;
@@ -139,15 +150,17 @@ namespace Proyecto_Integrador
             this.btn_cerrar.TabStop = false;
             this.btn_cerrar.Click += new System.EventHandler(this.btn_cerrar_Click);
             // 
-            // pictureBox1
+            // lkl_registro
             // 
-            this.pictureBox1.Image = global::Proyecto_Integrador.Properties.Resources.WhatsApp_Image_2021_07_15_at_21_39_24_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(11, 43);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(355, 348);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.lkl_registro.AutoSize = true;
+            this.lkl_registro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lkl_registro.LinkColor = System.Drawing.Color.Gainsboro;
+            this.lkl_registro.Location = new System.Drawing.Point(671, 381);
+            this.lkl_registro.Name = "lkl_registro";
+            this.lkl_registro.Size = new System.Drawing.Size(110, 25);
+            this.lkl_registro.TabIndex = 9;
+            this.lkl_registro.TabStop = true;
+            this.lkl_registro.Text = "Registrarse";
             // 
             // Login
             // 
@@ -155,6 +168,7 @@ namespace Proyecto_Integrador
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(162)))));
             this.ClientSize = new System.Drawing.Size(1073, 454);
+            this.Controls.Add(this.lkl_registro);
             this.Controls.Add(this.btn_minimizar);
             this.Controls.Add(this.btn_cerrar);
             this.Controls.Add(this.button1);
@@ -172,9 +186,9 @@ namespace Proyecto_Integrador
             this.Load += new System.EventHandler(this.Login_Load);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Login_MouseMove);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_minimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_cerrar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,5 +206,6 @@ namespace Proyecto_Integrador
         private System.Windows.Forms.PictureBox btn_cerrar;
         private System.Windows.Forms.PictureBox btn_minimizar;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.LinkLabel lkl_registro;
     }
 }
