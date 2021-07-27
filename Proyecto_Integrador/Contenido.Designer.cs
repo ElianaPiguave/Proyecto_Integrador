@@ -29,27 +29,31 @@ namespace Proyecto_Integrador
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Contenido));
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.MenuVertical = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.barra_superior = new System.Windows.Forms.Panel();
             this.btn_ventas = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.btn_compras = new System.Windows.Forms.Button();
             this.btn_clientes = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.btn_Productos = new System.Windows.Forms.Button();
             this.btn_inicio = new System.Windows.Forms.PictureBox();
+            this.barra_superior = new System.Windows.Forms.Panel();
             this.btn_minimizar = new System.Windows.Forms.PictureBox();
             this.btn_restaurar = new System.Windows.Forms.PictureBox();
             this.btn_maximizar = new System.Windows.Forms.PictureBox();
             this.btn_cerrar = new System.Windows.Forms.PictureBox();
+            this.dtpFechaIngreso = new System.Windows.Forms.Timer(this.components);
+            this.lbl_horayfecha = new System.Windows.Forms.Label();
+            this.lbl_hora = new System.Windows.Forms.Label();
             this.panelContenedor.SuspendLayout();
             this.MenuVertical.SuspendLayout();
-            this.barra_superior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_inicio)).BeginInit();
+            this.barra_superior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_minimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_restaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_maximizar)).BeginInit();
@@ -59,6 +63,8 @@ namespace Proyecto_Integrador
             // panelContenedor
             // 
             this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.panelContenedor.Controls.Add(this.lbl_hora);
+            this.panelContenedor.Controls.Add(this.lbl_horayfecha);
             this.panelContenedor.Controls.Add(this.MenuVertical);
             this.panelContenedor.Controls.Add(this.barra_superior);
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -74,8 +80,8 @@ namespace Proyecto_Integrador
             this.MenuVertical.Controls.Add(this.panel3);
             this.MenuVertical.Controls.Add(this.btn_ventas);
             this.MenuVertical.Controls.Add(this.panel2);
-            this.MenuVertical.Controls.Add(this.btn_compras);
             this.MenuVertical.Controls.Add(this.btn_clientes);
+            this.MenuVertical.Controls.Add(this.btn_compras);
             this.MenuVertical.Controls.Add(this.panel1);
             this.MenuVertical.Controls.Add(this.btn_Productos);
             this.MenuVertical.Controls.Add(this.btn_inicio);
@@ -101,36 +107,6 @@ namespace Proyecto_Integrador
             this.panel3.Size = new System.Drawing.Size(5, 32);
             this.panel3.TabIndex = 3;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel2.Location = new System.Drawing.Point(3, 122);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(5, 32);
-            this.panel2.TabIndex = 6;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel1.Location = new System.Drawing.Point(3, 84);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(5, 32);
-            this.panel1.TabIndex = 2;
-            // 
-            // barra_superior
-            // 
-            this.barra_superior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.barra_superior.Controls.Add(this.btn_minimizar);
-            this.barra_superior.Controls.Add(this.btn_restaurar);
-            this.barra_superior.Controls.Add(this.btn_maximizar);
-            this.barra_superior.Controls.Add(this.btn_cerrar);
-            this.barra_superior.Dock = System.Windows.Forms.DockStyle.Top;
-            this.barra_superior.Location = new System.Drawing.Point(0, 0);
-            this.barra_superior.Name = "barra_superior";
-            this.barra_superior.Size = new System.Drawing.Size(1132, 33);
-            this.barra_superior.TabIndex = 0;
-            this.barra_superior.MouseDown += new System.Windows.Forms.MouseEventHandler(this.barra_superior_MouseDown);
-            // 
             // btn_ventas
             // 
             this.btn_ventas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
@@ -148,6 +124,14 @@ namespace Proyecto_Integrador
             this.btn_ventas.Text = "Ventas";
             this.btn_ventas.UseVisualStyleBackColor = false;
             this.btn_ventas.Click += new System.EventHandler(this.btn_ventas_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.panel2.Location = new System.Drawing.Point(3, 122);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(5, 32);
+            this.panel2.TabIndex = 6;
             // 
             // btn_compras
             // 
@@ -185,6 +169,14 @@ namespace Proyecto_Integrador
             this.btn_clientes.UseVisualStyleBackColor = false;
             this.btn_clientes.Click += new System.EventHandler(this.btn_clientes_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.panel1.Location = new System.Drawing.Point(3, 84);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(5, 32);
+            this.panel1.TabIndex = 2;
+            // 
             // btn_Productos
             // 
             this.btn_Productos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
@@ -207,13 +199,27 @@ namespace Proyecto_Integrador
             // 
             this.btn_inicio.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_inicio.Image = global::Proyecto_Integrador.Properties.Resources.WhatsApp_Image_2021_07_15_at_21_39_24_removebg_preview;
-            this.btn_inicio.Location = new System.Drawing.Point(3, 3);
+            this.btn_inicio.Location = new System.Drawing.Point(3, 0);
             this.btn_inicio.Name = "btn_inicio";
             this.btn_inicio.Size = new System.Drawing.Size(214, 63);
             this.btn_inicio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btn_inicio.TabIndex = 0;
             this.btn_inicio.TabStop = false;
-            this.btn_inicio.Click += new System.EventHandler(this.btn_inicio_Click);
+          
+            // 
+            // barra_superior
+            // 
+            this.barra_superior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.barra_superior.Controls.Add(this.btn_minimizar);
+            this.barra_superior.Controls.Add(this.btn_restaurar);
+            this.barra_superior.Controls.Add(this.btn_maximizar);
+            this.barra_superior.Controls.Add(this.btn_cerrar);
+            this.barra_superior.Dock = System.Windows.Forms.DockStyle.Top;
+            this.barra_superior.Location = new System.Drawing.Point(0, 0);
+            this.barra_superior.Name = "barra_superior";
+            this.barra_superior.Size = new System.Drawing.Size(1132, 33);
+            this.barra_superior.TabIndex = 0;
+            this.barra_superior.MouseDown += new System.Windows.Forms.MouseEventHandler(this.barra_superior_MouseDown);
             // 
             // btn_minimizar
             // 
@@ -272,6 +278,32 @@ namespace Proyecto_Integrador
             this.btn_cerrar.TabStop = false;
             this.btn_cerrar.Click += new System.EventHandler(this.btn_cerrar_Click);
             // 
+            // dtpFechaIngreso
+            // 
+            this.dtpFechaIngreso.Enabled = true;
+            this.dtpFechaIngreso.Interval = 1000;
+            this.dtpFechaIngreso.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // lbl_horayfecha
+            // 
+            this.lbl_horayfecha.AutoSize = true;
+            this.lbl_horayfecha.Font = new System.Drawing.Font("Modern No. 20", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_horayfecha.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl_horayfecha.Location = new System.Drawing.Point(510, 83);
+            this.lbl_horayfecha.Name = "lbl_horayfecha";
+            this.lbl_horayfecha.Size = new System.Drawing.Size(0, 83);
+            this.lbl_horayfecha.TabIndex = 2;
+            // 
+            // lbl_hora
+            // 
+            this.lbl_hora.AutoSize = true;
+            this.lbl_hora.Font = new System.Drawing.Font("Modern No. 20", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_hora.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl_hora.Location = new System.Drawing.Point(452, 231);
+            this.lbl_hora.Name = "lbl_hora";
+            this.lbl_hora.Size = new System.Drawing.Size(0, 48);
+            this.lbl_hora.TabIndex = 3;
+            // 
             // Contenido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -284,9 +316,10 @@ namespace Proyecto_Integrador
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Contenido";
             this.panelContenedor.ResumeLayout(false);
+            this.panelContenedor.PerformLayout();
             this.MenuVertical.ResumeLayout(false);
-            this.barra_superior.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btn_inicio)).EndInit();
+            this.barra_superior.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btn_minimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_restaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_maximizar)).EndInit();
@@ -313,5 +346,8 @@ namespace Proyecto_Integrador
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btn_Productos;
         private System.Windows.Forms.PictureBox btn_restaurar;
+        private System.Windows.Forms.Timer dtpFechaIngreso;
+        private System.Windows.Forms.Label lbl_horayfecha;
+        private System.Windows.Forms.Label lbl_hora;
     }
 }

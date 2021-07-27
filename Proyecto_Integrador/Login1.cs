@@ -11,11 +11,11 @@ using System.Windows.Forms;
 
 namespace Proyecto_Integrador
 {
-    public partial class Login : Form
+    public partial class Login1 : Form
     {
         //cadena de conexion
         SqlConnection con = new SqlConnection("Data Source=LAPTOP-RMT1SOPH;Initial Catalog=Proyecto_Integrador;Integrated Security=True");
-        public Login()
+        public Login1()
         {
             InitializeComponent();
         }
@@ -27,7 +27,7 @@ namespace Proyecto_Integrador
         int y = 0;
         private void Login_MouseMove(object sender, MouseEventArgs e)
         {
-            if(e.Button != MouseButtons.Left)
+            if (e.Button != MouseButtons.Left)
             {
                 x = e.X;
                 y = e.Y;
@@ -49,10 +49,7 @@ namespace Proyecto_Integrador
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-           
-        }
+       
 
         private void lkl_registro_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -65,68 +62,48 @@ namespace Proyecto_Integrador
             try
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("select * from tbl_empleado where em_nombre = @nombre", con);
-                cmd.Parameters.AddWithValue("nombre", nombre);
+                SqlCommand cmd = new SqlCommand("Select * from tbl_empleado where em_usuario = @usuario", con);
+                cmd.Parameters.AddWithValue("@usuario", nombre);
                 SqlDataAdapter sda = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
                 con.Close();
 
-
-
-
                 if (dt.Rows.Count == 1)
                 {
                     con.Open();
-                    SqlCommand cmd1 = new SqlCommand("select em_nombre, em_id from tbl_empleado where em_nombre = @nombre and password= @pass", con);
-                    cmd1.Parameters.AddWithValue("nombre", nombre);
-                    cmd1.Parameters.AddWithValue("pass", passw);
+                    SqlCommand cmd1 = new SqlCommand("Select em_usuario, em_id from tbl_empleado where em_usuario = @usuario and password= @pass", con);
+                    cmd1.Parameters.AddWithValue("@usuario", nombre);
+                    cmd1.Parameters.AddWithValue("@pass", passw);
                     SqlDataAdapter sda1 = new SqlDataAdapter(cmd1);
                     DataTable dt1 = new DataTable();
                     sda1.Fill(dt1);
                     con.Close();
 
-
-
                 }
                 else
-                {
-
-
-
-
                     txt_usuario.Text = "";
-                    txt_pass.Text = "";
-                    MessageBox.Show("Usuario/contraseña incorrectos ");
+                txt_pass.Text = "";
+                MessageBox.Show("Usuario/contraseña incorrectos ");
 
-
-
-
-                    this.Close();
-                }
+                this.Close();
             }
             catch (Exception e)
             {
                 MessageBox.Show(e.Message);
             }
-            finally
-            {
 
 
-
-            }
         }
 
-
+      
 
         private void btn_ingresar_Click(object sender, EventArgs e)
         {
             logear(txt_usuario.Text, txt_pass.Text);
-
-
-
+            this.Hide();
+            new Contenido().ShowDialog();
+            this.Close();
         }
     }
 }
-    
-

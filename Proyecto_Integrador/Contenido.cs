@@ -71,10 +71,7 @@ namespace Proyecto_Integrador
         {
             AbrirFormHija(new Productos());        }
 
-        private void btn_inicio_Click(object sender, EventArgs e)
-        {
-            AbrirFormHija(new Inicio());
-        }
+       
 
         private void btn_ventas_Click(object sender, EventArgs e)
         {
@@ -89,6 +86,12 @@ namespace Proyecto_Integrador
         private void btn_compras_Click(object sender, EventArgs e)
         {
             AbrirFormHija(new Compras());
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lbl_horayfecha.Text = DateTime.Now.ToLongTimeString();
+            lbl_hora.Text = DateTime.Now.ToLongDateString();
         }
     }
 }
