@@ -58,11 +58,11 @@
     <Compile Include="Compras.Designer.cs">
       <DependentUpon>Compras.cs</DependentUpon>
     </Compile>
-    <Compile Include="Contenido.cs">
+    <Compile Include="Contenido1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Contenido.Designer.cs">
-      <DependentUpon>Contenido.cs</DependentUpon>
+    <Compile Include="Contenido1.Designer.cs">
+      <DependentUpon>Contenido1.cs</DependentUpon>
     </Compile>
     <Compile Include="Login1.cs">
       <SubType>Form</SubType>
@@ -96,8 +96,8 @@
     <EmbeddedResource Include="Compras.resx">
       <DependentUpon>Compras.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Contenido.resx">
-      <DependentUpon>Contenido.cs</DependentUpon>
+    <EmbeddedResource Include="Contenido1.resx">
+      <DependentUpon>Contenido1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login1.resx">
       <DependentUpon>Login1.cs</DependentUpon>

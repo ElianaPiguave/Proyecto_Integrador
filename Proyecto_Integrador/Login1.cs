@@ -102,7 +102,7 @@ namespace Proyecto_Integrador
         {
             logear(txt_usuario.Text, txt_pass.Text);
             this.Hide();
-            new Contenido().ShowDialog();
+            new Contenido1().ShowDialog();
             this.Close();
         }
     }

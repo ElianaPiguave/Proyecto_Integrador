@@ -16,7 +16,7 @@ namespace Proyecto_Integrador
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login1());
+            Application.Run(new Contenido1());
         }
     }
 }

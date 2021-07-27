@@ -31,6 +31,10 @@ namespace Proyecto_Integrador
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
@@ -47,10 +51,6 @@ namespace Proyecto_Integrador
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -64,7 +64,7 @@ namespace Proyecto_Integrador
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1061, 631);
+            this.panel1.Size = new System.Drawing.Size(1185, 631);
             this.panel1.TabIndex = 0;
             // 
             // panel2
@@ -89,10 +89,58 @@ namespace Proyecto_Integrador
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.panel2.Location = new System.Drawing.Point(11, 125);
+            this.panel2.Location = new System.Drawing.Point(266, 168);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1020, 449);
+            this.panel2.Size = new System.Drawing.Size(916, 449);
             this.panel2.TabIndex = 2;
+            // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
+            this.button4.Image = global::Proyecto_Integrador.Properties.Resources.error;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(646, 390);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(132, 38);
+            this.button4.TabIndex = 21;
+            this.button4.Text = "    Cancelar";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
+            this.button3.Image = global::Proyecto_Integrador.Properties.Resources.editar;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(467, 390);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(132, 38);
+            this.button3.TabIndex = 20;
+            this.button3.Text = "Editar";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
+            this.button2.Image = global::Proyecto_Integrador.Properties.Resources.disquete;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(288, 390);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(132, 38);
+            this.button2.TabIndex = 19;
+            this.button2.Text = "Guardar";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
+            this.button1.Image = global::Proyecto_Integrador.Properties.Resources.agregar_archivo;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(115, 390);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(132, 38);
+            this.button1.TabIndex = 18;
+            this.button1.Text = "Nuevo";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // dateTimePicker1
             // 
@@ -234,64 +282,16 @@ namespace Proyecto_Integrador
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 13.8F);
             this.label1.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label1.Location = new System.Drawing.Point(3, 29);
+            this.label1.Location = new System.Drawing.Point(270, 59);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(136, 33);
             this.label1.TabIndex = 1;
             this.label1.Text = "Clientes";
             // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
-            this.button4.Image = global::Proyecto_Integrador.Properties.Resources.error;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(646, 390);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(132, 38);
-            this.button4.TabIndex = 21;
-            this.button4.Text = "Cancelar";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
-            this.button3.Image = global::Proyecto_Integrador.Properties.Resources.editar;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(467, 390);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(132, 38);
-            this.button3.TabIndex = 20;
-            this.button3.Text = "Editar";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
-            this.button2.Image = global::Proyecto_Integrador.Properties.Resources.disquete;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(288, 390);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(132, 38);
-            this.button2.TabIndex = 19;
-            this.button2.Text = "Guardar";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
-            this.button1.Image = global::Proyecto_Integrador.Properties.Resources.agregar_archivo;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(115, 390);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(132, 38);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "Nuevo";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Proyecto_Integrador.Properties.Resources.consumidor__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(145, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(412, 29);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(162, 94);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -302,7 +302,7 @@ namespace Proyecto_Integrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1061, 631);
+            this.ClientSize = new System.Drawing.Size(1187, 631);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Clientes";

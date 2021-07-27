@@ -17,14 +17,6 @@ namespace Proyecto_Integrador
             InitializeComponent();
         }
 
-        private void Ventas_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-        }
+      
     }
 }

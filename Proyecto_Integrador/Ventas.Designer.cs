@@ -54,6 +54,7 @@ namespace Proyecto_Integrador
             this.label9 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
@@ -69,12 +70,11 @@ namespace Proyecto_Integrador
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -95,7 +95,7 @@ namespace Proyecto_Integrador
             this.panel1.Controls.Add(this.flowLayoutPanel1);
             this.panel1.Location = new System.Drawing.Point(1, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1061, 631);
+            this.panel1.Size = new System.Drawing.Size(1208, 631);
             this.panel1.TabIndex = 0;
             // 
             // button5
@@ -103,20 +103,20 @@ namespace Proyecto_Integrador
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(877, 574);
+            this.button5.Location = new System.Drawing.Point(1028, 570);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(132, 38);
             this.button5.TabIndex = 10;
             this.button5.Text = "   Cancelar";
             this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+          
             // 
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(731, 574);
+            this.button4.Location = new System.Drawing.Point(882, 570);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(132, 38);
             this.button4.TabIndex = 10;
@@ -128,7 +128,7 @@ namespace Proyecto_Integrador
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(581, 574);
+            this.button3.Location = new System.Drawing.Point(732, 570);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(132, 38);
             this.button3.TabIndex = 10;
@@ -138,24 +138,26 @@ namespace Proyecto_Integrador
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(54, 591);
+            this.label14.Location = new System.Drawing.Point(256, 582);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(97, 17);
             this.label14.TabIndex = 8;
             this.label14.Text = "Total Pagado:";
+           
             // 
             // textBox12
             // 
             this.textBox12.Enabled = false;
-            this.textBox12.Location = new System.Drawing.Point(157, 586);
+            this.textBox12.Location = new System.Drawing.Point(359, 577);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(122, 22);
             this.textBox12.TabIndex = 7;
+            
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(54, 410);
+            this.dataGridView1.Location = new System.Drawing.Point(239, 395);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -179,7 +181,7 @@ namespace Proyecto_Integrador
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(54, 259);
+            this.panel2.Location = new System.Drawing.Point(239, 259);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(955, 116);
             this.panel2.TabIndex = 5;
@@ -212,7 +214,7 @@ namespace Proyecto_Integrador
             // 
             this.dateTimePicker2.Location = new System.Drawing.Point(661, 18);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(245, 22);
+            this.dateTimePicker2.Size = new System.Drawing.Size(291, 22);
             this.dateTimePicker2.TabIndex = 12;
             // 
             // textBox11
@@ -328,11 +330,21 @@ namespace Proyecto_Integrador
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label1.Location = new System.Drawing.Point(19, 33);
+            this.label1.Location = new System.Drawing.Point(236, 50);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(117, 33);
             this.label1.TabIndex = 4;
             this.label1.Text = "Ventas";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Proyecto_Integrador.Properties.Resources.WhatsApp_Image_2021_07_15_at_21_39_24_removebg_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(375, 20);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(162, 94);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // panel3
             // 
@@ -350,7 +362,7 @@ namespace Proyecto_Integrador
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel3.Location = new System.Drawing.Point(54, 115);
+            this.panel3.Location = new System.Drawing.Point(239, 120);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(955, 124);
             this.panel3.TabIndex = 2;
@@ -375,7 +387,7 @@ namespace Proyecto_Integrador
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(660, 31);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(270, 24);
+            this.dateTimePicker1.Size = new System.Drawing.Size(292, 24);
             this.dateTimePicker1.TabIndex = 11;
             // 
             // textBox4
@@ -477,34 +489,24 @@ namespace Proyecto_Integrador
             this.flowLayoutPanel1.Size = new System.Drawing.Size(8, 8);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Proyecto_Integrador.Properties.Resources.WhatsApp_Image_2021_07_15_at_21_39_24_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(142, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(162, 94);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
             // Ventas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1064, 633);
+            this.ClientSize = new System.Drawing.Size(1207, 633);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Ventas";
             this.Text = "Ventas";
-            this.Load += new System.EventHandler(this.Ventas_Load);
+            
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
