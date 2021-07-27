@@ -84,13 +84,14 @@ namespace Proyecto_Integrador
                 else
                     txt_usuario.Text = "";
                 txt_pass.Text = "";
-                MessageBox.Show("Usuario/contraseña incorrectos ");
+                MessageBox.Show("Bienvenido...");
 
                 this.Close();
             }
             catch (Exception e)
             {
                 MessageBox.Show(e.Message);
+                MessageBox.Show("Usuario/Contraseña incorrectos");
             }
 
 
@@ -104,6 +105,11 @@ namespace Proyecto_Integrador
             this.Hide();
             new Contenido1().ShowDialog();
             this.Close();
+        }
+
+        private void Login1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
