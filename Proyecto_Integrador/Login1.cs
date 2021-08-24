@@ -106,7 +106,7 @@ namespace Proyecto_Integrador
             DataTable dt = new DataTable();
             objetoCN.Logeo(txt_usuario.Text,txt_pass.Text);
             
-            if(dt.Rows.Count > 0)
+            if(dt.Rows.Count > 1)
             {
                 txt_usuario.Text = dt.Rows[0][0].ToString();
                 txt_pass.Text = dt.Rows[0][1].ToString();
