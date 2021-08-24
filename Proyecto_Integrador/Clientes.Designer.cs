@@ -31,16 +31,17 @@ namespace Proyecto_Integrador
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txt_direccion = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btbn_crear = new System.Windows.Forms.Button();
+            this.btn_guardar = new System.Windows.Forms.Button();
+            this.dtp_fecha = new System.Windows.Forms.DateTimePicker();
+            this.txt_email = new System.Windows.Forms.TextBox();
+            this.txt_apellido = new System.Windows.Forms.TextBox();
+            this.txt_telefono = new System.Windows.Forms.TextBox();
+            this.txt_ced = new System.Windows.Forms.TextBox();
+            this.txt_nombre = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -52,7 +53,6 @@ namespace Proyecto_Integrador
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -71,17 +71,17 @@ namespace Proyecto_Integrador
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.textBox3);
+            this.panel2.Controls.Add(this.txt_direccion);
             this.panel2.Controls.Add(this.button4);
             this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.dateTimePicker1);
-            this.panel2.Controls.Add(this.textBox8);
-            this.panel2.Controls.Add(this.textBox7);
-            this.panel2.Controls.Add(this.textBox6);
-            this.panel2.Controls.Add(this.textBox4);
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.btbn_crear);
+            this.panel2.Controls.Add(this.btn_guardar);
+            this.panel2.Controls.Add(this.dtp_fecha);
+            this.panel2.Controls.Add(this.txt_email);
+            this.panel2.Controls.Add(this.txt_apellido);
+            this.panel2.Controls.Add(this.txt_telefono);
+            this.panel2.Controls.Add(this.txt_ced);
+            this.panel2.Controls.Add(this.txt_nombre);
             this.panel2.Controls.Add(this.textBox1);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label9);
@@ -97,6 +97,13 @@ namespace Proyecto_Integrador
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1030, 561);
             this.panel2.TabIndex = 2;
+            // 
+            // txt_direccion
+            // 
+            this.txt_direccion.Location = new System.Drawing.Point(212, 332);
+            this.txt_direccion.Name = "txt_direccion";
+            this.txt_direccion.Size = new System.Drawing.Size(282, 28);
+            this.txt_direccion.TabIndex = 22;
             // 
             // button4
             // 
@@ -124,85 +131,86 @@ namespace Proyecto_Integrador
             this.button3.Text = "Editar";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btbn_crear
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
-            this.button2.Image = global::Proyecto_Integrador.Properties.Resources.disquete;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(324, 488);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(148, 48);
-            this.button2.TabIndex = 19;
-            this.button2.Text = "Guardar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btbn_crear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
+            this.btbn_crear.Image = global::Proyecto_Integrador.Properties.Resources.disquete;
+            this.btbn_crear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btbn_crear.Location = new System.Drawing.Point(324, 488);
+            this.btbn_crear.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btbn_crear.Name = "btbn_crear";
+            this.btbn_crear.Size = new System.Drawing.Size(148, 48);
+            this.btbn_crear.TabIndex = 19;
+            this.btbn_crear.Text = "Guardar";
+            this.btbn_crear.UseVisualStyleBackColor = true;
+            this.btbn_crear.Click += new System.EventHandler(this.btbn_crear_Click);
             // 
-            // button1
+            // btn_guardar
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
-            this.button1.Image = global::Proyecto_Integrador.Properties.Resources.agregar_archivo;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(129, 488);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(148, 48);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "Nuevo";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_guardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
+            this.btn_guardar.Image = global::Proyecto_Integrador.Properties.Resources.agregar_archivo;
+            this.btn_guardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_guardar.Location = new System.Drawing.Point(129, 488);
+            this.btn_guardar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_guardar.Name = "btn_guardar";
+            this.btn_guardar.Size = new System.Drawing.Size(148, 48);
+            this.btn_guardar.TabIndex = 18;
+            this.btn_guardar.Text = "Nuevo";
+            this.btn_guardar.UseVisualStyleBackColor = true;
+            this.btn_guardar.Click += new System.EventHandler(this.button1_Click);
             // 
-            // dateTimePicker1
+            // dtp_fecha
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(212, 176);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(282, 28);
-            this.dateTimePicker1.TabIndex = 17;
+            this.dtp_fecha.Location = new System.Drawing.Point(212, 176);
+            this.dtp_fecha.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dtp_fecha.Name = "dtp_fecha";
+            this.dtp_fecha.Size = new System.Drawing.Size(282, 28);
+            this.dtp_fecha.TabIndex = 17;
             // 
-            // textBox8
+            // txt_email
             // 
-            this.textBox8.BackColor = System.Drawing.Color.NavajoWhite;
-            this.textBox8.Location = new System.Drawing.Point(714, 400);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(270, 28);
-            this.textBox8.TabIndex = 16;
+            this.txt_email.BackColor = System.Drawing.Color.NavajoWhite;
+            this.txt_email.Location = new System.Drawing.Point(714, 400);
+            this.txt_email.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_email.Name = "txt_email";
+            this.txt_email.Size = new System.Drawing.Size(270, 28);
+            this.txt_email.TabIndex = 16;
             // 
-            // textBox7
+            // txt_apellido
             // 
-            this.textBox7.BackColor = System.Drawing.Color.NavajoWhite;
-            this.textBox7.Location = new System.Drawing.Point(714, 111);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(270, 28);
-            this.textBox7.TabIndex = 15;
+            this.txt_apellido.BackColor = System.Drawing.Color.NavajoWhite;
+            this.txt_apellido.Location = new System.Drawing.Point(714, 111);
+            this.txt_apellido.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_apellido.Name = "txt_apellido";
+            this.txt_apellido.Size = new System.Drawing.Size(270, 28);
+            this.txt_apellido.TabIndex = 15;
             // 
-            // textBox6
+            // txt_telefono
             // 
-            this.textBox6.BackColor = System.Drawing.Color.NavajoWhite;
-            this.textBox6.Location = new System.Drawing.Point(212, 400);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(282, 28);
-            this.textBox6.TabIndex = 14;
+            this.txt_telefono.BackColor = System.Drawing.Color.NavajoWhite;
+            this.txt_telefono.Location = new System.Drawing.Point(212, 400);
+            this.txt_telefono.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_telefono.Name = "txt_telefono";
+            this.txt_telefono.Size = new System.Drawing.Size(282, 28);
+            this.txt_telefono.TabIndex = 14;
             // 
-            // textBox4
+            // txt_ced
             // 
-            this.textBox4.BackColor = System.Drawing.Color.NavajoWhite;
-            this.textBox4.Location = new System.Drawing.Point(212, 250);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(282, 28);
-            this.textBox4.TabIndex = 12;
+            this.txt_ced.BackColor = System.Drawing.Color.NavajoWhite;
+            this.txt_ced.Location = new System.Drawing.Point(212, 250);
+            this.txt_ced.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_ced.Name = "txt_ced";
+            this.txt_ced.Size = new System.Drawing.Size(282, 28);
+            this.txt_ced.TabIndex = 12;
             // 
-            // textBox2
+            // txt_nombre
             // 
-            this.textBox2.BackColor = System.Drawing.Color.NavajoWhite;
-            this.textBox2.Location = new System.Drawing.Point(212, 111);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(282, 28);
-            this.textBox2.TabIndex = 10;
+            this.txt_nombre.BackColor = System.Drawing.Color.NavajoWhite;
+            this.txt_nombre.Location = new System.Drawing.Point(212, 111);
+            this.txt_nombre.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_nombre.Name = "txt_nombre";
+            this.txt_nombre.Size = new System.Drawing.Size(282, 28);
+            this.txt_nombre.TabIndex = 10;
             // 
             // textBox1
             // 
@@ -315,13 +323,6 @@ namespace Proyecto_Integrador
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(212, 332);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(282, 28);
-            this.textBox3.TabIndex = 22;
-            // 
             // Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -350,14 +351,14 @@ namespace Proyecto_Integrador
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button btbn_crear;
+        private System.Windows.Forms.Button btn_guardar;
+        private System.Windows.Forms.DateTimePicker dtp_fecha;
+        private System.Windows.Forms.TextBox txt_email;
+        private System.Windows.Forms.TextBox txt_apellido;
+        private System.Windows.Forms.TextBox txt_telefono;
+        private System.Windows.Forms.TextBox txt_ced;
+        private System.Windows.Forms.TextBox txt_nombre;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
@@ -367,6 +368,6 @@ namespace Proyecto_Integrador
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt_direccion;
     }
 }
