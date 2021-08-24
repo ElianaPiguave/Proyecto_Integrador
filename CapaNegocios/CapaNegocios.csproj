@@ -41,12 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CN_Login.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Proyecto_Integrador\Proyecto_Integrador.csproj">
-      <Project>{403b8f8d-7d32-403d-a928-c32cb0572ce2}</Project>
-      <Name>Proyecto_Integrador</Name>
+    <ProjectReference Include="..\CapaDatos\CapaDatos.csproj">
+      <Project>{f8a11ae1-604a-47b1-bd07-62cbdbbf1883}</Project>
+      <Name>CapaDatos</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

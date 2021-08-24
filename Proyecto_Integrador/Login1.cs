@@ -8,13 +8,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using CapaDatos;
+using CapaNegocios;
 namespace Proyecto_Integrador
 {
     public partial class Login1 : Form
     {
-        //cadena de conexion
-        SqlConnection con = new SqlConnection("Data Source=LAPTOP-RMT1SOPH;Initial Catalog=Proyecto_Integrador;Integrated Security=True");
+        private CN_Login objetoCN = new CN_Login();
+        private CD_Login objetoCD = new CD_Login();
+
         public Login1()
         {
             InitializeComponent();
@@ -57,54 +59,69 @@ namespace Proyecto_Integrador
             new Registro().ShowDialog();
             this.Close();
         }
-        private void logear(string nombre, string passw)
-        {
-            try
-            {
-                con.Open();
-                SqlCommand cmd = new SqlCommand("Select * from tbl_empleado where em_usuario = @usuario", con);
-                cmd.Parameters.AddWithValue("@usuario", nombre);
-                SqlDataAdapter sda = new SqlDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                sda.Fill(dt);
-                con.Close();
+        //private void logear(string nombre, string passw)
+        //{
+        //    try
+        //    {
+        //        con.Open();
+        //        SqlCommand cmd = new SqlCommand("Select * from tbl_empleado where em_usuario = @usuario", con);
+        //        cmd.Parameters.AddWithValue("@usuario", nombre);
+        //        SqlDataAdapter sda = new SqlDataAdapter(cmd);
+        //        DataTable dt = new DataTable();
+        //        sda.Fill(dt);
+        //        con.Close();
 
-                if (dt.Rows.Count == 1)
-                {
-                    con.Open();
-                    SqlCommand cmd1 = new SqlCommand("Select em_usuario, em_id from tbl_empleado where em_usuario = @usuario and password= @pass", con);
-                    cmd1.Parameters.AddWithValue("@usuario", nombre);
-                    cmd1.Parameters.AddWithValue("@pass", passw);
-                    SqlDataAdapter sda1 = new SqlDataAdapter(cmd1);
-                    DataTable dt1 = new DataTable();
-                    sda1.Fill(dt1);
-                    con.Close();
+        //        if (dt.Rows.Count == 1)
+        //        {
+        //            con.Open();
+        //            SqlCommand cmd1 = new SqlCommand("Select em_usuario, em_id from tbl_empleado where em_usuario = @usuario and password= @pass", con);
+        //            cmd1.Parameters.AddWithValue("@usuario", nombre);
+        //            cmd1.Parameters.AddWithValue("@pass", passw);
+        //            SqlDataAdapter sda1 = new SqlDataAdapter(cmd1);
+        //            DataTable dt1 = new DataTable();
+        //            sda1.Fill(dt1);
+        //            con.Close();
 
-                }
-                else
-                    txt_usuario.Text = "";
-                txt_pass.Text = "";
-                MessageBox.Show("Bienvenido...");
+        //        }
+        //        else
+        //            txt_usuario.Text = "";
+        //        txt_pass.Text = "";
+        //        MessageBox.Show("Bienvenido...");
 
-                this.Close();
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show(e.Message);
-                MessageBox.Show("Usuario/Contraseña incorrectos");
-            }
+        //        this.Close();
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        MessageBox.Show(e.Message);
+        //        MessageBox.Show("Usuario/Contraseña incorrectos");
+        //    }
 
 
-        }
+        //}
 
       
 
         private void btn_ingresar_Click(object sender, EventArgs e)
         {
-            logear(txt_usuario.Text, txt_pass.Text);
-            this.Hide();
-            new Contenido1().ShowDialog();
-            this.Close();
+            DataTable dt = new DataTable();
+            objetoCN.Logeo(txt_usuario.Text,txt_pass.Text);
+            
+            if(dt.Rows.Count > 0)
+            {
+                txt_usuario.Text = dt.Rows[0][0].ToString();
+                txt_pass.Text = dt.Rows[0][1].ToString();
+
+                MessageBox.Show("Bienvenido");
+            }
+            else
+            {
+                MessageBox.Show("Bienvenido");
+            }
+
+            //logear(txt_usuario.Text, txt_pass.Text);
+            //this.Hide();
+            //new Contenido1().ShowDialog();
+            //this.Close();
         }
 
         private void Login1_Load(object sender, EventArgs e)
