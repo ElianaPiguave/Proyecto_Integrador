@@ -28,14 +28,14 @@ namespace Proyecto_Integrador
        
         private void AbrirFormHija(object formhija)
         {
-            if (this.panelContenedor.Controls.Count > 0)
-                this.panelContenedor.Controls.RemoveAt(0);
+            if (this.panelContenido.Controls.Count > 0)
+                this.panelContenido.Controls.RemoveAt(0);
 
             Form fh = formhija as Form;
             fh.TopLevel = false;
             fh.Dock = DockStyle.Fill;
-            this.panelContenedor.Controls.Add(fh);
-            this.panelContenedor.Tag = fh;
+            this.panelContenido.Controls.Add(fh);
+            this.panelContenido.Tag = fh;
             fh.Show();
         }
 

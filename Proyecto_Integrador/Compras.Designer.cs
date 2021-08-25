@@ -78,7 +78,7 @@ namespace Proyecto_Integrador
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1229, 625);
+            this.panel1.Size = new System.Drawing.Size(1011, 615);
             this.panel1.TabIndex = 0;
             // 
             // groupBox1
@@ -101,7 +101,7 @@ namespace Proyecto_Integrador
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(238, 108);
+            this.groupBox1.Location = new System.Drawing.Point(11, 97);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(982, 507);
             this.groupBox1.TabIndex = 2;
@@ -411,7 +411,7 @@ namespace Proyecto_Integrador
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Proyecto_Integrador.Properties.Resources.cesta_de_la_compra;
-            this.pictureBox1.Location = new System.Drawing.Point(562, 13);
+            this.pictureBox1.Location = new System.Drawing.Point(335, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(152, 89);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -424,7 +424,7 @@ namespace Proyecto_Integrador
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 13.8F);
             this.label1.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label1.Location = new System.Drawing.Point(253, 46);
+            this.label1.Location = new System.Drawing.Point(26, 35);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(290, 33);
             this.label1.TabIndex = 0;
@@ -434,7 +434,7 @@ namespace Proyecto_Integrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1235, 631);
+            this.ClientSize = new System.Drawing.Size(1013, 622);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Compras";

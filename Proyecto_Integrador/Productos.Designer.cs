@@ -64,7 +64,7 @@ namespace Proyecto_Integrador
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1162, 624);
+            this.panel1.Size = new System.Drawing.Size(965, 591);
             this.panel1.TabIndex = 0;
             // 
             // groupBox1
@@ -88,9 +88,9 @@ namespace Proyecto_Integrador
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(220, 131);
+            this.groupBox1.Location = new System.Drawing.Point(8, 119);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(942, 467);
+            this.groupBox1.Size = new System.Drawing.Size(942, 457);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Productos";
@@ -275,7 +275,7 @@ namespace Proyecto_Integrador
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Proyecto_Integrador.Properties.Resources.vegetales;
-            this.pictureBox1.Location = new System.Drawing.Point(417, 17);
+            this.pictureBox1.Location = new System.Drawing.Point(205, 5);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(162, 94);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -287,7 +287,7 @@ namespace Proyecto_Integrador
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 13.8F);
             this.label1.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label1.Location = new System.Drawing.Point(243, 55);
+            this.label1.Location = new System.Drawing.Point(31, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(168, 33);
             this.label1.TabIndex = 0;
@@ -297,7 +297,7 @@ namespace Proyecto_Integrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1167, 631);
+            this.ClientSize = new System.Drawing.Size(973, 594);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Productos";

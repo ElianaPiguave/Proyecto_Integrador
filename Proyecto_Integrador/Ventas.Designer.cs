@@ -95,7 +95,7 @@ namespace Proyecto_Integrador
             this.panel1.Controls.Add(this.flowLayoutPanel1);
             this.panel1.Location = new System.Drawing.Point(1, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1208, 631);
+            this.panel1.Size = new System.Drawing.Size(985, 579);
             this.panel1.TabIndex = 0;
             // 
             // button5
@@ -103,20 +103,19 @@ namespace Proyecto_Integrador
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(1028, 570);
+            this.button5.Location = new System.Drawing.Point(804, 532);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(132, 38);
             this.button5.TabIndex = 10;
             this.button5.Text = "   Cancelar";
             this.button5.UseVisualStyleBackColor = true;
-          
             // 
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(882, 570);
+            this.button4.Location = new System.Drawing.Point(658, 532);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(132, 38);
             this.button4.TabIndex = 10;
@@ -128,7 +127,7 @@ namespace Proyecto_Integrador
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(732, 570);
+            this.button3.Location = new System.Drawing.Point(508, 532);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(132, 38);
             this.button3.TabIndex = 10;
@@ -138,26 +137,24 @@ namespace Proyecto_Integrador
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(256, 582);
+            this.label14.Location = new System.Drawing.Point(32, 544);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(97, 17);
             this.label14.TabIndex = 8;
             this.label14.Text = "Total Pagado:";
-           
             // 
             // textBox12
             // 
             this.textBox12.Enabled = false;
-            this.textBox12.Location = new System.Drawing.Point(359, 577);
+            this.textBox12.Location = new System.Drawing.Point(135, 539);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(122, 22);
             this.textBox12.TabIndex = 7;
-            
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(239, 395);
+            this.dataGridView1.Location = new System.Drawing.Point(14, 378);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -181,7 +178,7 @@ namespace Proyecto_Integrador
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(239, 259);
+            this.panel2.Location = new System.Drawing.Point(14, 242);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(955, 116);
             this.panel2.TabIndex = 5;
@@ -330,7 +327,7 @@ namespace Proyecto_Integrador
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label1.Location = new System.Drawing.Point(236, 50);
+            this.label1.Location = new System.Drawing.Point(11, 33);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(117, 33);
             this.label1.TabIndex = 4;
@@ -339,7 +336,7 @@ namespace Proyecto_Integrador
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Proyecto_Integrador.Properties.Resources.WhatsApp_Image_2021_07_15_at_21_39_24_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(375, 20);
+            this.pictureBox1.Location = new System.Drawing.Point(150, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(162, 94);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -362,7 +359,7 @@ namespace Proyecto_Integrador
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel3.Location = new System.Drawing.Point(239, 120);
+            this.panel3.Location = new System.Drawing.Point(14, 103);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(955, 124);
             this.panel3.TabIndex = 2;
@@ -493,12 +490,11 @@ namespace Proyecto_Integrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1207, 633);
+            this.ClientSize = new System.Drawing.Size(991, 583);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Ventas";
             this.Text = "Ventas";
-            
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
