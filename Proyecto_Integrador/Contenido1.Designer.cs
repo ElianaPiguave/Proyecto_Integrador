@@ -50,6 +50,7 @@ namespace Proyecto_Integrador
             this.btn_maximizar = new System.Windows.Forms.PictureBox();
             this.btn_cerrar = new System.Windows.Forms.PictureBox();
             this.dtpFechaIngreso = new System.Windows.Forms.Timer(this.components);
+            this.panelContenido = new System.Windows.Forms.Panel();
             this.panelContenedor.SuspendLayout();
             this.MenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_inicio)).BeginInit();
@@ -63,6 +64,7 @@ namespace Proyecto_Integrador
             // panelContenedor
             // 
             this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.panelContenedor.Controls.Add(this.panelContenido);
             this.panelContenedor.Controls.Add(this.lbl_hora);
             this.panelContenedor.Controls.Add(this.lbl_horayfecha);
             this.panelContenedor.Controls.Add(this.MenuVertical);
@@ -303,6 +305,13 @@ namespace Proyecto_Integrador
             this.dtpFechaIngreso.Interval = 1000;
             this.dtpFechaIngreso.Tick += new System.EventHandler(this.dtpFechaIngreso_Tick);
             // 
+            // panelContenido
+            // 
+            this.panelContenido.Location = new System.Drawing.Point(222, 39);
+            this.panelContenido.Name = "panelContenido";
+            this.panelContenido.Size = new System.Drawing.Size(1042, 594);
+            this.panelContenido.TabIndex = 5;
+            // 
             // Contenido1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -346,5 +355,6 @@ namespace Proyecto_Integrador
         private System.Windows.Forms.Label lbl_hora;
         private System.Windows.Forms.Label lbl_horayfecha;
         private System.Windows.Forms.Timer dtpFechaIngreso;
+        private System.Windows.Forms.Panel panelContenido;
     }
 }
