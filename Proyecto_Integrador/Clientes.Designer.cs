@@ -49,12 +49,12 @@ namespace Proyecto_Integrador
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgv_cliente = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_cliente)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -274,7 +274,7 @@ namespace Proyecto_Integrador
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.dataGridView1);
+            this.panel3.Controls.Add(this.dgv_cliente);
             this.panel3.Controls.Add(this.btbn_crear);
             this.panel3.Controls.Add(this.button4);
             this.panel3.Controls.Add(this.button3);
@@ -283,13 +283,13 @@ namespace Proyecto_Integrador
             this.panel3.Size = new System.Drawing.Size(668, 183);
             this.panel3.TabIndex = 23;
             // 
-            // dataGridView1
+            // dgv_cliente
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 16);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(535, 150);
-            this.dataGridView1.TabIndex = 0;
+            this.dgv_cliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_cliente.Location = new System.Drawing.Point(3, 16);
+            this.dgv_cliente.Name = "dgv_cliente";
+            this.dgv_cliente.Size = new System.Drawing.Size(535, 150);
+            this.dgv_cliente.TabIndex = 0;
             // 
             // Clientes
             // 
@@ -308,7 +308,7 @@ namespace Proyecto_Integrador
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_cliente)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -335,6 +335,6 @@ namespace Proyecto_Integrador
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_direccion;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgv_cliente;
     }
 }

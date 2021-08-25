@@ -20,7 +20,7 @@ namespace CapaDatos
         public DataTable mostrar()
         {
             cmd.Connection = con.abrir_Conexion();
-            cmd.CommandText = "PROCEDIMIENTO ALMACENADO";
+            cmd.CommandText = "MostrarUsuario";
             cmd.CommandType = CommandType.StoredProcedure;
             leer = cmd.ExecuteReader();
             tabla.Load(leer);
