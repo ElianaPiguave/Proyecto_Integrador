@@ -11,11 +11,12 @@ using System.Windows.Forms;
 
 namespace Proyecto_Integrador
 {
-    //private CN_Cliente objetoCN = new CN_Cliente();
-    //private string id = null;
-    //private bool editar = false;
+    
     public partial class Clientes : Form
     {
+        private CN_Cliente objetoCN = new CN_Cliente();
+        private string id = null;
+        private bool editar = false;
         public Clientes()
         {
             InitializeComponent();
