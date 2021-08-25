@@ -24,7 +24,14 @@ namespace Proyecto_Integrador
 
         private void Clientes_Load(object sender, EventArgs e)
         {
+            mostrar_cliente();
 
+        }
+
+        private void mostrar_cliente()
+        {
+            CN_Cliente objeto = new CN_Cliente();
+            dgv_cliente.DataSource = objeto.mostrarClientes();
         }
 
         private void button1_Click(object sender, EventArgs e)
