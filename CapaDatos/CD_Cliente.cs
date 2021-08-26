@@ -45,7 +45,21 @@ namespace CapaDatos
             con.cerrar_Conexion();
         }
 
-
+        public void editar(string nombre, string apellido, string cedula, string direccion, string telefono, string email)
+        {
+            cmd.Connection = con.abrir_Conexion();
+            cmd.CommandText = "EditarClientes";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@nombre", nombre);
+            cmd.Parameters.AddWithValue("@apellido", apellido);
+            cmd.Parameters.AddWithValue("@cedula", cedula);
+            cmd.Parameters.AddWithValue("@direccion", direccion);
+            cmd.Parameters.AddWithValue("@telefono", telefono);
+            cmd.Parameters.AddWithValue("@email", email);
+            cmd.ExecuteNonQuery();
+            cmd.Parameters.Clear();
+            con.cerrar_Conexion();
+        }
 
 
 

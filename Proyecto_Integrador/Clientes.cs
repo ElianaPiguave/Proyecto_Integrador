@@ -14,6 +14,7 @@ namespace Proyecto_Integrador
     
     public partial class Clientes : Form
     {
+
         private CN_Cliente objetoCN = new CN_Cliente();
         private string id = null;
         private bool editar = false;
@@ -83,6 +84,32 @@ namespace Proyecto_Integrador
         private void button4_Click(object sender, EventArgs e)
         {
             limpiar();
+        }
+
+        private void btn_editar_Cliente(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txt_nombre.Text) && string.IsNullOrEmpty(txt_apellido.Text))
+            {
+                MessageBox.Show("De doble click para editar datos");
+            }
+            else
+            {
+                if (editar)
+                {
+                    try
+                    {
+                        objetoCN.editarCliente(txt_nombre.Text, txt_apellido.Text, txt_ced.Text, txt_direccion.Text, txt_telefono.Text, txt_email.Text);
+                        MessageBox.Show("Se edito correctamente");
+                        mostrar_cliente();
+                        limpiar();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("No se edito los datos.." + ex.Message);
+                        throw;
+                    }
+                }
+            }
         }
     }
 }
