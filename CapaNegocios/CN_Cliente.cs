@@ -17,9 +17,9 @@ namespace CapaNegocios
             tabla = objetoCD.mostrar();
             return tabla;
         }
-        public void insertarCliente(string nombre, string apellido, string feha_na, string cedula, string direccion, string telefono, string email)
+        public void insertarCliente(string nombre, string apellido, string cedula, string direccion, string telefono, string email)
         {
-            objetoCD.insertar(nombre, apellido,Convert.ToDateTime(feha_na), Convert.ToInt32(cedula), direccion, Convert.ToInt32(telefono), email);
+            objetoCD.insertar(nombre, apellido, Convert.ToInt32(cedula), direccion, Convert.ToInt32(telefono), email);
         }
 
     }

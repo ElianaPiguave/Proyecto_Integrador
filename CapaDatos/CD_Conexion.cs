@@ -11,7 +11,7 @@ namespace CapaDatos
     class CD_Conexion
     {
         //cadena de conexion
-        private SqlConnection cn = new SqlConnection("Data Source=DESKTOP-OF5SBBD;Initial Catalog=ProyectoIntegrador;Integrated Security=True");
+        private SqlConnection cn = new SqlConnection("Data Source = DESKTOP - OF5SBBD; Initial Catalog = Proyecto; Integrated Security = True");
 
         //metodo de apertura y cierre de la conexion
 

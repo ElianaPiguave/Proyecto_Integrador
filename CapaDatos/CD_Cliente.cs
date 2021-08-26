@@ -28,18 +28,18 @@ namespace CapaDatos
             return tabla;
 
         }
-        public void insertar(string cli_nombre, string cli_apellido, DateTime cli_fecha_na, int cli_cedula, string cli_direccion, int cli_telefono, string cli_email)
+        public void insertar(string cl_nombre, string cl_apellido, int cl_cedula, string cl_direccion, int cl_telefono, string cl_email)
         {
             cmd.Connection = con.abrir_Conexion();
-            cmd.CommandText = "Procedimiento";
+            cmd.CommandText = "InsertarCliente";
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@cli_nombre", cli_nombre);
-            cmd.Parameters.AddWithValue("@cli_apellido", cli_apellido);
-            cmd.Parameters.AddWithValue("@cli_fechaN", cli_fecha_na);
-            cmd.Parameters.AddWithValue("@cli_cedula", cli_cedula);
-            cmd.Parameters.AddWithValue("@cli_direccion", cli_direccion);
-            cmd.Parameters.AddWithValue("@cli_telefono", cli_telefono);
-            cmd.Parameters.AddWithValue("@cli_email", cli_email);
+            cmd.Parameters.AddWithValue("@cl_nombre", cl_nombre);
+            cmd.Parameters.AddWithValue("@cl_apellido", cl_apellido);
+            
+            cmd.Parameters.AddWithValue("@cl_cedula", cl_cedula);
+            cmd.Parameters.AddWithValue("@cl_direccion", cl_direccion);
+            cmd.Parameters.AddWithValue("@cl_telefono", cl_telefono);
+            cmd.Parameters.AddWithValue("@cl_email", cl_email);
             cmd.ExecuteNonQuery();
             cmd.Parameters.Clear();
             con.cerrar_Conexion();

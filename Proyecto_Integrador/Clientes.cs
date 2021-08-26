@@ -47,18 +47,18 @@ namespace Proyecto_Integrador
             }
             else
             {
-               // if (editar == false)
+               if (editar == false)
                 {
                     try
                     {
-                 //       objetoCN.  
-                        MessageBox.Show("El estudinte se regitro correctaamente");
+                        objetoCN.insertarCliente(txt_nombre.Text,txt_apellido.Text,txt_ced.Text,txt_direccion.Text,txt_telefono.Text,txt_email.Text);
+                        MessageBox.Show("El estudiante se regitro correctamente");
                         //mostrar_estudiante();
                         limpiar();
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show("El estudinte  no se regitro correctaamente");
+                        MessageBox.Show("El estudiante  no se registro correctamente");
 
                         throw;
                     }
@@ -74,10 +74,15 @@ namespace Proyecto_Integrador
             txt_direccion.Clear();
             txt_email.Clear();
             txt_telefono.Clear();
-            //id = null;
-           // editar = false;
+            id = null;
+            editar = false;
             btbn_crear.Enabled = true;
-            dtp_fecha.Value = DateTime.Now;
+           
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            limpiar();
         }
     }
 }
