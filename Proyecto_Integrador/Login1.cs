@@ -15,7 +15,7 @@ namespace Proyecto_Integrador
     public partial class Login1 : Form
     {
         private CN_Login objetoCN = new CN_Login();
-        private CD_Login objetoCD = new CD_Login();
+        
 
         public Login1()
         {
@@ -106,7 +106,7 @@ namespace Proyecto_Integrador
             DataTable dt = new DataTable();
             objetoCN.Logeo(txt_usuario.Text,txt_pass.Text);
             
-            if(dt.Rows.Count > 1)
+            if(dt.Rows.Count == 1)
             {
                 txt_usuario.Text = dt.Rows[0][0].ToString();
                 txt_pass.Text = dt.Rows[0][1].ToString();
@@ -115,7 +115,7 @@ namespace Proyecto_Integrador
             }
             else
             {
-                MessageBox.Show("Bienvenido");
+                MessageBox.Show("NO Tiene Acceso al Sistema", "Sistema de Ventas", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             //logear(txt_usuario.Text, txt_pass.Text);
