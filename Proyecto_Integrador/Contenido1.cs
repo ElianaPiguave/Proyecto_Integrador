@@ -56,7 +56,7 @@ namespace Proyecto_Integrador
 
         private void btn_clientes_Click_1(object sender, EventArgs e)
         {
-            AbrirFormHija(new Clientes());
+            AbrirFormHija(new Cliente());
         }
 
         private void dtpFechaIngreso_Tick(object sender, EventArgs e)

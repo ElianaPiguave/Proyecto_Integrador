@@ -25,9 +25,9 @@ namespace CapaNegocios
             objetoCD.insertar(nombre, apellido, Convert.ToInt32(cedula), direccion, Convert.ToInt32(telefono), email);
         }
 
-        public void editarCliente(string nombre, string apellido, string cedula, string direccion, string telefono, string email)
+        public void editarCliente(string nombre, string apellido, string cedula, string direccion, string telefono, string email,int id)
         {
-            objetoCD.editar(nombre, apellido,cedula, direccion, telefono, email);
+            objetoCD.editar(nombre, apellido,cedula, direccion, telefono, email,id);
         }
 
     }
