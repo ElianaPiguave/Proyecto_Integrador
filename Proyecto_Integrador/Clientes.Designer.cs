@@ -150,7 +150,7 @@ namespace Proyecto_Integrador
             this.btn_editar.TabIndex = 20;
             this.btn_editar.Text = "Editar";
             this.btn_editar.UseVisualStyleBackColor = true;
-            this.btn_editar.Click += new System.EventHandler(this.button3_Click);
+
             // 
             // txt_direccion
             // 

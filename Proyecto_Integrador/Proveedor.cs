@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Proyecto_Integrador
 {
-    public partial class Productos : Form
+    public partial class Proveedor : Form
     {
-        public Productos()
+        public Proveedor()
         {
             InitializeComponent();
         }

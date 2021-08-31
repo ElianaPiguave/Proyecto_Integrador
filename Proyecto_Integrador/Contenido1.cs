@@ -41,7 +41,7 @@ namespace Proyecto_Integrador
 
         private void btn_Productos_Click_1(object sender, EventArgs e)
         {
-            AbrirFormHija(new Productos());
+            AbrirFormHija(new Proveedor());
         }
 
         private void btn_ventas_Click_1(object sender, EventArgs e)
